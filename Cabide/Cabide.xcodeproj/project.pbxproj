@@ -7,16 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A71E37E82BB274B100274DC1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71E37E72BB274B100274DC1 /* Category.swift */; };
+		A71E37EA2BB2772400274DC1 /* Look.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71E37E92BB2772400274DC1 /* Look.swift */; };
+		A71E37EC2BB2785400274DC1 /* ClothingAtLook.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71E37EB2BB2785400274DC1 /* ClothingAtLook.swift */; };
+		A71E37EE2BB27DF500274DC1 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71E37ED2BB27DF500274DC1 /* Collection.swift */; };
+		A76AE2C52BB231100077A872 /* Database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76AE2C42BB231100077A872 /* Database.framework */; };
+		A76AE2C62BB231100077A872 /* Database.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A76AE2C42BB231100077A872 /* Database.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A76AE2D42BB233180077A872 /* Clothing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AE2D32BB233180077A872 /* Clothing.swift */; };
+		A76AE2EE2BB2369B0077A872 /* DependencyInjection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76AE2ED2BB2369B0077A872 /* DependencyInjection.framework */; };
+		A76AE2EF2BB2369B0077A872 /* DependencyInjection.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A76AE2ED2BB2369B0077A872 /* DependencyInjection.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A76AE3102BB23BF00077A872 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AE30F2BB23BF00077A872 /* Persistence.swift */; };
+		A76AE3312BB23CF70077A872 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AE3302BB23CF70077A872 /* AppDelegate.swift */; };
+		A76AE3332BB23F3A0077A872 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AE3322BB23F3A0077A872 /* Models.swift */; };
+		A76AE3392BB240800077A872 /* Cabide.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A76AE3372BB240800077A872 /* Cabide.xcdatamodeld */; };
 		A797C2C32BA6388800F78833 /* CabideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797C2C22BA6388800F78833 /* CabideApp.swift */; };
-		A797C2C52BA6388800F78833 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797C2C42BA6388800F78833 /* ContentView.swift */; };
+		A797C2C52BA6388800F78833 /* DatabaseExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797C2C42BA6388800F78833 /* DatabaseExampleView.swift */; };
 		A797C2C72BA6388900F78833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A797C2C62BA6388900F78833 /* Assets.xcassets */; };
 		A797C2CA2BA6388900F78833 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A797C2C92BA6388900F78833 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A76AE2C72BB231100077A872 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A76AE2C62BB231100077A872 /* Database.framework in Embed Frameworks */,
+				A76AE2EF2BB2369B0077A872 /* DependencyInjection.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A71E37E72BB274B100274DC1 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		A71E37E92BB2772400274DC1 /* Look.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Look.swift; sourceTree = "<group>"; };
+		A71E37EB2BB2785400274DC1 /* ClothingAtLook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingAtLook.swift; sourceTree = "<group>"; };
+		A71E37ED2BB27DF500274DC1 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		A76AE2C42BB231100077A872 /* Database.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Database.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76AE2D32BB233180077A872 /* Clothing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clothing.swift; sourceTree = "<group>"; };
+		A76AE2ED2BB2369B0077A872 /* DependencyInjection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DependencyInjection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76AE30F2BB23BF00077A872 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		A76AE3302BB23CF70077A872 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A76AE3322BB23F3A0077A872 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A76AE3382BB240800077A872 /* Cabide.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cabide.xcdatamodel; sourceTree = "<group>"; };
 		A797C2BF2BA6388800F78833 /* Cabide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cabide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A797C2C22BA6388800F78833 /* CabideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabideApp.swift; sourceTree = "<group>"; };
-		A797C2C42BA6388800F78833 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A797C2C42BA6388800F78833 /* DatabaseExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseExampleView.swift; sourceTree = "<group>"; };
 		A797C2C62BA6388900F78833 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A797C2C92BA6388900F78833 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -26,17 +65,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76AE2C52BB231100077A872 /* Database.framework in Frameworks */,
+				A76AE2EE2BB2369B0077A872 /* DependencyInjection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A76AE2C32BB231100077A872 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A76AE2ED2BB2369B0077A872 /* DependencyInjection.framework */,
+				A76AE2C42BB231100077A872 /* Database.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A76AE2D22BB232E80077A872 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A76AE3322BB23F3A0077A872 /* Models.swift */,
+				A76AE2D32BB233180077A872 /* Clothing.swift */,
+				A71E37E72BB274B100274DC1 /* Category.swift */,
+				A71E37E92BB2772400274DC1 /* Look.swift */,
+				A71E37EB2BB2785400274DC1 /* ClothingAtLook.swift */,
+				A71E37ED2BB27DF500274DC1 /* Collection.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A797C2B62BA6388800F78833 = {
 			isa = PBXGroup;
 			children = (
 				A797C2C12BA6388800F78833 /* Cabide */,
 				A797C2C02BA6388800F78833 /* Products */,
+				A76AE2C32BB231100077A872 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,9 +116,13 @@
 			isa = PBXGroup;
 			children = (
 				A797C2C22BA6388800F78833 /* CabideApp.swift */,
-				A797C2C42BA6388800F78833 /* ContentView.swift */,
-				A797C2C62BA6388900F78833 /* Assets.xcassets */,
+				A76AE3302BB23CF70077A872 /* AppDelegate.swift */,
+				A76AE30F2BB23BF00077A872 /* Persistence.swift */,
+				A797C2C42BA6388800F78833 /* DatabaseExampleView.swift */,
+				A76AE2D22BB232E80077A872 /* Models */,
 				A797C2C82BA6388900F78833 /* Preview Content */,
+				A76AE3372BB240800077A872 /* Cabide.xcdatamodeld */,
+				A797C2C62BA6388900F78833 /* Assets.xcassets */,
 			);
 			path = Cabide;
 			sourceTree = "<group>";
@@ -77,6 +145,7 @@
 				A797C2BB2BA6388800F78833 /* Sources */,
 				A797C2BC2BA6388800F78833 /* Frameworks */,
 				A797C2BD2BA6388800F78833 /* Resources */,
+				A76AE2C72BB231100077A872 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -137,8 +206,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A797C2C52BA6388800F78833 /* ContentView.swift in Sources */,
+				A797C2C52BA6388800F78833 /* DatabaseExampleView.swift in Sources */,
+				A76AE3102BB23BF00077A872 /* Persistence.swift in Sources */,
+				A76AE3392BB240800077A872 /* Cabide.xcdatamodeld in Sources */,
+				A76AE2D42BB233180077A872 /* Clothing.swift in Sources */,
+				A76AE3332BB23F3A0077A872 /* Models.swift in Sources */,
+				A76AE3312BB23CF70077A872 /* AppDelegate.swift in Sources */,
+				A71E37EA2BB2772400274DC1 /* Look.swift in Sources */,
+				A71E37EE2BB27DF500274DC1 /* Collection.swift in Sources */,
+				A71E37EC2BB2785400274DC1 /* ClothingAtLook.swift in Sources */,
 				A797C2C32BA6388800F78833 /* CabideApp.swift in Sources */,
+				A71E37E82BB274B100274DC1 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +363,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gmm.Cabide;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cabide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -314,7 +392,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gmm.Cabide;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cabide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -344,6 +422,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A76AE3372BB240800077A872 /* Cabide.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A76AE3382BB240800077A872 /* Cabide.xcdatamodel */,
+			);
+			currentVersion = A76AE3382BB240800077A872 /* Cabide.xcdatamodel */;
+			name = Cabide.xcdatamodeld;
+			path = /Users/gabrielmedeirosmartins/Documents/prog/swift/cabide/Cabide/Cabide/Cabide.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A797C2B72BA6388800F78833 /* Project object */;
 }

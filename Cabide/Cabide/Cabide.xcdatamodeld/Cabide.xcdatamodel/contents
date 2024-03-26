@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22757" systemVersion="23D60" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="CategoryEntity" representedClassName="CategoryEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="clothes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ClothingEntity" inverseName="categories" inverseEntity="ClothingEntity"/>
+    </entity>
+    <entity name="ClothingAtLookEntity" representedClassName="ClothingAtLookEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="position" optional="YES" attributeType="Binary"/>
+        <attribute name="transform" optional="YES" attributeType="Binary"/>
+        <relationship name="clothing" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ClothingEntity" inverseName="atLooks" inverseEntity="ClothingEntity"/>
+        <relationship name="look" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LookEntity" inverseName="clothes" inverseEntity="LookEntity"/>
+    </entity>
+    <entity name="ClothingEntity" representedClassName="ClothingEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <relationship name="atLooks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ClothingAtLookEntity" inverseName="clothing" inverseEntity="ClothingAtLookEntity"/>
+        <relationship name="categories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CategoryEntity" inverseName="clothes" inverseEntity="CategoryEntity"/>
+    </entity>
+    <entity name="CollectionEntity" representedClassName="CollectionEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="looks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LookEntity" inverseName="collections" inverseEntity="LookEntity"/>
+    </entity>
+    <entity name="LookEntity" representedClassName="LookEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="thumbnail" optional="YES" attributeType="Binary"/>
+        <relationship name="clothes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ClothingAtLookEntity" inverseName="look" inverseEntity="ClothingAtLookEntity"/>
+        <relationship name="collections" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CollectionEntity" inverseName="looks" inverseEntity="CollectionEntity"/>
+    </entity>
+</model>
