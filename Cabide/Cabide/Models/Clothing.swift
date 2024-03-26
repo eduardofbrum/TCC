@@ -12,10 +12,15 @@ class Clothing: ObservableObject {
     var id: UUID
     
     @Published var image: Data
+    @Published var categories: [Category]
     
-    required init(id: UUID = UUID(), image: Data = Data()) {
+    var atLooks: [ClothingAtLook]
+    
+    required init(id: UUID = UUID(), image: Data = Data(), categories: [Category] = [], atLooks: [ClothingAtLook] = []) {
         self.id = id
         self.image = image
+        self.categories = categories
+        self.atLooks = atLooks
     }
 }
 
@@ -27,9 +32,29 @@ extension Clothing: EntityRepresentable {
         
         visited.updateValue(nil, forKey: representation.id)
         
-        guard let image = representation.values["image"] as? Data else { return nil }
+        guard let image = representation.values["image"] as? Data,
+              let categoriesRepresentation = representation.toManyRelationships["categories"],
+              let atLooksRepresentations = representation.toManyRelationships["atLooks"] else { return nil }
         
-        let decoded = Self.init(id: representation.id, image: image)
+        let categories = categoriesRepresentation.reduce([Category]()) { partialResult, innerRepresentation in
+            guard let model = Category.decode(representation: innerRepresentation, visited: &visited) else { return partialResult }
+            
+            var result = partialResult
+            result.append(model)
+            
+            return result
+        }
+        
+        let atLooks = atLooksRepresentations.reduce([ClothingAtLook]()) { partialResult, innerRepresentation in
+            guard let model = ClothingAtLook.decode(representation: innerRepresentation, visited: &visited) else { return partialResult }
+            
+            var result = partialResult
+            result.append(model)
+            
+            return result
+        }
+        
+        let decoded = Self.init(id: representation.id, image: image, categories: categories, atLooks: [])
         visited[representation.id] = decoded
         
         return decoded
@@ -50,7 +75,10 @@ extension Clothing: EntityRepresentable {
         
         let toOneRelationships: [String : EntityRepresentation] = [:]
         
-        let toManyRelationships: [String : [EntityRepresentation]] = [:]
+        let toManyRelationships: [String : [EntityRepresentation]] = [
+            "categories" : self.categories.map({ $0.encode(visited: &visited) }),
+            "atLooks" : self.atLooks.map({ $0.encode(visited: &visited) }),
+        ]
         
         encoded.values = values
         encoded.toOneRelationships = toOneRelationships

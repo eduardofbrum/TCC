@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A71E37E82BB274B100274DC1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71E37E72BB274B100274DC1 /* Category.swift */; };
+		A71E37EA2BB2772400274DC1 /* Look.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71E37E92BB2772400274DC1 /* Look.swift */; };
+		A71E37EC2BB2785400274DC1 /* ClothingAtLook.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71E37EB2BB2785400274DC1 /* ClothingAtLook.swift */; };
+		A71E37EE2BB27DF500274DC1 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71E37ED2BB27DF500274DC1 /* Collection.swift */; };
 		A76AE2C52BB231100077A872 /* Database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76AE2C42BB231100077A872 /* Database.framework */; };
 		A76AE2C62BB231100077A872 /* Database.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A76AE2C42BB231100077A872 /* Database.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A76AE2D42BB233180077A872 /* Clothing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AE2D32BB233180077A872 /* Clothing.swift */; };
@@ -38,6 +42,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A71E37E72BB274B100274DC1 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		A71E37E92BB2772400274DC1 /* Look.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Look.swift; sourceTree = "<group>"; };
+		A71E37EB2BB2785400274DC1 /* ClothingAtLook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingAtLook.swift; sourceTree = "<group>"; };
+		A71E37ED2BB27DF500274DC1 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		A76AE2C42BB231100077A872 /* Database.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Database.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76AE2D32BB233180077A872 /* Clothing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clothing.swift; sourceTree = "<group>"; };
 		A76AE2ED2BB2369B0077A872 /* DependencyInjection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DependencyInjection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,8 +85,12 @@
 		A76AE2D22BB232E80077A872 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A76AE2D32BB233180077A872 /* Clothing.swift */,
 				A76AE3322BB23F3A0077A872 /* Models.swift */,
+				A76AE2D32BB233180077A872 /* Clothing.swift */,
+				A71E37E72BB274B100274DC1 /* Category.swift */,
+				A71E37E92BB2772400274DC1 /* Look.swift */,
+				A71E37EB2BB2785400274DC1 /* ClothingAtLook.swift */,
+				A71E37ED2BB27DF500274DC1 /* Collection.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -200,7 +212,11 @@
 				A76AE2D42BB233180077A872 /* Clothing.swift in Sources */,
 				A76AE3332BB23F3A0077A872 /* Models.swift in Sources */,
 				A76AE3312BB23CF70077A872 /* AppDelegate.swift in Sources */,
+				A71E37EA2BB2772400274DC1 /* Look.swift in Sources */,
+				A71E37EE2BB27DF500274DC1 /* Collection.swift in Sources */,
+				A71E37EC2BB2785400274DC1 /* ClothingAtLook.swift in Sources */,
 				A797C2C32BA6388800F78833 /* CabideApp.swift in Sources */,
+				A71E37E82BB274B100274DC1 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
