@@ -17,7 +17,7 @@
 		A76AE3332BB23F3A0077A872 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76AE3322BB23F3A0077A872 /* Models.swift */; };
 		A76AE3392BB240800077A872 /* Cabide.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A76AE3372BB240800077A872 /* Cabide.xcdatamodeld */; };
 		A797C2C32BA6388800F78833 /* CabideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797C2C22BA6388800F78833 /* CabideApp.swift */; };
-		A797C2C52BA6388800F78833 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797C2C42BA6388800F78833 /* ContentView.swift */; };
+		A797C2C52BA6388800F78833 /* DatabaseExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797C2C42BA6388800F78833 /* DatabaseExampleView.swift */; };
 		A797C2C72BA6388900F78833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A797C2C62BA6388900F78833 /* Assets.xcassets */; };
 		A797C2CA2BA6388900F78833 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A797C2C92BA6388900F78833 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -47,7 +47,7 @@
 		A76AE3382BB240800077A872 /* Cabide.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cabide.xcdatamodel; sourceTree = "<group>"; };
 		A797C2BF2BA6388800F78833 /* Cabide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cabide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A797C2C22BA6388800F78833 /* CabideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabideApp.swift; sourceTree = "<group>"; };
-		A797C2C42BA6388800F78833 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A797C2C42BA6388800F78833 /* DatabaseExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseExampleView.swift; sourceTree = "<group>"; };
 		A797C2C62BA6388900F78833 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A797C2C92BA6388900F78833 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,7 +106,7 @@
 				A797C2C22BA6388800F78833 /* CabideApp.swift */,
 				A76AE3302BB23CF70077A872 /* AppDelegate.swift */,
 				A76AE30F2BB23BF00077A872 /* Persistence.swift */,
-				A797C2C42BA6388800F78833 /* ContentView.swift */,
+				A797C2C42BA6388800F78833 /* DatabaseExampleView.swift */,
 				A76AE2D22BB232E80077A872 /* Models */,
 				A797C2C82BA6388900F78833 /* Preview Content */,
 				A76AE3372BB240800077A872 /* Cabide.xcdatamodeld */,
@@ -194,7 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A797C2C52BA6388800F78833 /* ContentView.swift in Sources */,
+				A797C2C52BA6388800F78833 /* DatabaseExampleView.swift in Sources */,
 				A76AE3102BB23BF00077A872 /* Persistence.swift in Sources */,
 				A76AE3392BB240800077A872 /* Cabide.xcdatamodeld in Sources */,
 				A76AE2D42BB233180077A872 /* Clothing.swift in Sources */,
