@@ -13,7 +13,7 @@ struct CabideApp: App {
     
     var body: some Scene {
         WindowGroup {
-            DatabaseExampleView()
+            ClothingView()
         }
     }
 }
